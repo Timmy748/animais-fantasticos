@@ -37,4 +37,4 @@ initAnimacaoScroll();
 initDropdownMenu();
 fecthAnimais("../../animaisapi.json", ".numeros-grid");
 initFuncionamento();
-initFecthBitcoin();
+initFecthBitcoin("https://blockchain.info/ticker", ".btc-preco");
