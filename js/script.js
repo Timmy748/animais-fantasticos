@@ -4,7 +4,7 @@ import Accordion from "./modules/accordion.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import initDropdownMenu from "./modules/drop-down-menu.js";
+import DropdownMenu from "./modules/drop-down-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fecthAnimais from "./modules/fecth-animais.js";
@@ -35,8 +35,12 @@ tooltip.init();
 const scrollanima = new ScrollAnima("[data-anime='scroll']");
 scrollanima.init();
 
-initMenuMobile();
-initDropdownMenu();
+const dropdownmenu = new DropdownMenu("[data-dropdown]");
+dropdownmenu.init();
+
 fecthAnimais("../../animaisapi.json", ".numeros-grid");
-initFuncionamento();
+
 initFecthBitcoin("https://blockchain.info/ticker", ".btc-preco");
+
+initFuncionamento();
+initMenuMobile();
