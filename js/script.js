@@ -5,7 +5,7 @@ import ScrollSuave from "./modules/scroll-suave.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/drop-down-menu.js";
-import initMenuMobile from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fecthAnimais from "./modules/fecth-animais.js";
 import initFecthBitcoin from "./modules/fecth-bitcoin.js";
@@ -38,9 +38,11 @@ scrollanima.init();
 const dropdownmenu = new DropdownMenu("[data-dropdown]");
 dropdownmenu.init();
 
+const menumobile = new MenuMobile("[data-menu='button']", "[data-menu='list']");
+menumobile.init();
+
 fecthAnimais("../../animaisapi.json", ".numeros-grid");
 
 initFecthBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 initFuncionamento();
-initMenuMobile();
