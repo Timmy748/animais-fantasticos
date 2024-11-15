@@ -6,7 +6,7 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/drop-down-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import Funcionamento from "./modules/funcionamento.js";
 import fecthAnimais from "./modules/fecth-animais.js";
 import initFecthBitcoin from "./modules/fecth-bitcoin.js";
 
@@ -41,8 +41,11 @@ dropdownmenu.init();
 const menumobile = new MenuMobile("[data-menu='button']", "[data-menu='list']");
 menumobile.init();
 
+const funcionamento = new Funcionamento("[data-semana]");
+funcionamento.init();
+
 fecthAnimais("../../animaisapi.json", ".numeros-grid");
 
 initFecthBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
-initFuncionamento();
+
