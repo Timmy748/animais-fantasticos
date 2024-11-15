@@ -44,7 +44,7 @@ menumobile.init();
 const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();
 
-fecthAnimais("../../animaisapi.json", ".numeros-grid");
+fecthAnimais("./animaisapi.json", ".numeros-grid");
 
 initFecthBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
