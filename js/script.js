@@ -9,6 +9,7 @@ import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 import fecthAnimais from "./modules/fecth-animais.js";
 import initFecthBitcoin from "./modules/fecth-bitcoin.js";
+import SlideNav from "./modules/slide.js";
 
 const scrollSuave = new ScrollSuave("[data-menu='suave'] a[href^='#'");
 scrollSuave.init();
@@ -43,6 +44,12 @@ menumobile.init();
 
 const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();
+
+
+
+const slide = new SlideNav(".slide-wrapper", ".slide");
+slide.init();
+slide.addControl(".custom-controls");
 
 fecthAnimais("./animaisapi.json", ".numeros-grid");
 
