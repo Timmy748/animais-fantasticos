@@ -1,7 +1,7 @@
-@import url(./geral.css);
-@import url(./modal.css);
-@import url(./tooltip.css);
-@import url(./drop-down-menu.css);
-@import url(./menu-mobile.css);
-@import url(./numeros.css);
-@import url(./slide.css);
+@import 'geral.css';
+@import 'modal.css';
+@import 'tooltip.css';
+@import 'dropdown-menu.css';
+@import 'menu-mobile.css';
+@import 'numeros.css';
+@import 'slide.css';
